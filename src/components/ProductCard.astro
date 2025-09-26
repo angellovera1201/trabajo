@@ -1,0 +1,19 @@
+---
+import type { propsToFilename } from 'astro/assets/utils'
+
+interface Props {
+    // la estructura de los datos
+    title: string
+    img: string 
+}
+
+const title = Astro.props.title
+const img = Astro.props.img
+---
+<div>
+    <img src={img} alt="" >
+    <div>
+        <h3></h3>
+        <p>{title}</p>
+    </div>
+</div>
