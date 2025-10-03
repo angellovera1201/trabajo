@@ -1,19 +1,42 @@
 ---
-import type { propsToFilename } from 'astro/assets/utils'
+import { Icon } from 'astro-icon/components'
 
 interface Props {
     // la estructura de los datos
     title: string
     img: string 
+    price: number
 }
 
 const title = Astro.props.title
 const img = Astro.props.img
+const price= Astro.props.price
 ---
 <div>
     <img src={img} alt="" >
+    
     <div>
         <h3></h3>
+        <div class="mondongo">
         <p>{title}</p>
+        <Icon name={'estrella'} />
+        </div>
+        <p>$ {price}</p>
+        <button>comprar</button>
     </div>
 </div>
+
+<style>
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    button {
+
+    }
+    .mondongo {
+        display: ;
+
+    }
+</style>

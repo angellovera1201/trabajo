@@ -3,9 +3,18 @@ import Layout from "../layouts/Layout.astro"
 import ProductCard from "../components/ProductCard.astro"
 ---
 <Layout>
-<ProductCard title="tacos" img="malisimo.png"/>
-<ProductCard title="mondongo" img="playa.png"/>
-<ProductCard title="KFC" img="malisimo.png"/>
-<ProductCard title="sushi" img="playa.png"/>
-</Layout>
+    <div>
+ <ProductCard title="Camisa Barca Especial" price={45} img="camisetabarcaespecial.png"/>
+ <ProductCard title="Tacos Phanton" price={66} img="tacosphanton.png"/>
+ <ProductCard title="Camisa Real Madrid Local" price={79} img="camisetamadrid.png"/>
+ <ProductCard title="Guantes Copa" price={100} img="guantescopaadidas.png"/>
+  </div>
+ </Layout>
+  
+<style>
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+}
+</style>
 
