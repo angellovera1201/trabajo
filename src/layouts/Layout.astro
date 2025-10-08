@@ -1,6 +1,6 @@
 ---
 //aqui adentro va el codigo typescript o javascript
-import Footer from "../components/footer.astro"
+import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 import '../styles/global.css'
 ---
@@ -36,3 +36,16 @@ import '../styles/global.css'
 		height: 100%;
 	}
 </style>
+	
+<script>
+	import Lenis from 'lenis'
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
+</script>

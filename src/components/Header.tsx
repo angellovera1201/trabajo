@@ -1,0 +1,24 @@
+export default function () {
+    //escribir los procedimientos
+return (
+<header>
+    <nav>
+        <img src="/nikepng.png" alt="logo de la pagina" />
+
+
+     <ul>
+        <li> <a href="/">inicio</a></li>
+        <li> <a href="/about-us">sobre nosotros</a></li>
+        <li><a href="/shop">tienda</a></li>
+        <li><a href="/collections">colecciones</a></li>
+        <li><a href="/shipping">envios</a></li>
+     </ul>
+
+     
+      
+      
+    </nav>
+  </header>
+
+)
+}
